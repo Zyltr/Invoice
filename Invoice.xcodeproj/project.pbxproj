@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030453E82137AE2100623914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030453E72137AE2100623914 /* AppDelegate.swift */; };
+		030453EA2137AE2100623914 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030453E92137AE2100623914 /* MainViewController.swift */; };
+		030453EC2137AE2300623914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030453EB2137AE2300623914 /* Assets.xcassets */; };
+		030453EF2137AE2300623914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030453ED2137AE2300623914 /* Main.storyboard */; };
+		030453F92137C39F00623914 /* New-Invoice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 030453F82137C39F00623914 /* New-Invoice.jpg */; };
+		030453FB2137CDD200623914 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030453FA2137CDD200623914 /* SingleViewController.swift */; };
+		030454002138648600623914 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030453FF2138648600623914 /* DatePickerViewController.swift */; };
+		030454032138C61500623914 /* BatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030454022138C61500623914 /* BatchViewController.swift */; };
+		030454062138C82300623914 /* CSV.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 030454042138C82300623914 /* CSV.framework.dSYM */; };
+		030454082138C83600623914 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030454052138C82300623914 /* CSV.framework */; };
+		030454092138C83600623914 /* CSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 030454052138C82300623914 /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0304540C213A4B4C00623914 /* BatchHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0304540B213A4B4B00623914 /* BatchHelpViewController.swift */; };
+		0304540E213A4EA400623914 /* Sample.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0304540D213A4EA400623914 /* Sample.csv */; };
+		034C642C213DE45300CE34C1 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034C642B213DE45300CE34C1 /* Invoice.swift */; };
+		034C642E213DE60C00CE34C1 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034C642D213DE60C00CE34C1 /* Header.swift */; };
+		034C6430213E0C3300CE34C1 /* BatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034C642F213E0C3300CE34C1 /* BatchDetailViewController.swift */; };
+		0393EEA1213F1B1000336150 /* BatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0393EEA0213F1B1000336150 /* BatchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0304540A2138C83600623914 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				030454092138C83600623914 /* CSV.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		030453E42137AE2100623914 /* Invoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Invoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		030453E72137AE2100623914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		030453E92137AE2100623914 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		030453EB2137AE2300623914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		030453EE2137AE2300623914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		030453F02137AE2300623914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		030453F12137AE2300623914 /* Invoice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Invoice.entitlements; sourceTree = "<group>"; };
+		030453F82137C39F00623914 /* New-Invoice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New-Invoice.jpg"; sourceTree = "<group>"; };
+		030453FA2137CDD200623914 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		030453FF2138648600623914 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		030454022138C61500623914 /* BatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchViewController.swift; sourceTree = "<group>"; };
+		030454042138C82300623914 /* CSV.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = CSV.framework.dSYM; sourceTree = "<group>"; };
+		030454052138C82300623914 /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CSV.framework; sourceTree = "<group>"; };
+		0304540B213A4B4B00623914 /* BatchHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchHelpViewController.swift; sourceTree = "<group>"; };
+		0304540D213A4EA400623914 /* Sample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sample.csv; sourceTree = "<group>"; };
+		034C642B213DE45300CE34C1 /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		034C642D213DE60C00CE34C1 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		034C642F213E0C3300CE34C1 /* BatchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchDetailViewController.swift; sourceTree = "<group>"; };
+		0393EEA0213F1B1000336150 /* BatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		030453E12137AE2100623914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030454082138C83600623914 /* CSV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030453DB2137AE2100623914 = {
+			isa = PBXGroup;
+			children = (
+				030453E62137AE2100623914 /* Invoice */,
+				030453E52137AE2100623914 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		030453E52137AE2100623914 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				030453E42137AE2100623914 /* Invoice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		030453E62137AE2100623914 /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				030453E72137AE2100623914 /* AppDelegate.swift */,
+				030453E92137AE2100623914 /* MainViewController.swift */,
+				030454012138C5FC00623914 /* Batch */,
+				030453FE2138645400623914 /* Single */,
+				030453ED2137AE2300623914 /* Main.storyboard */,
+				030453EB2137AE2300623914 /* Assets.xcassets */,
+				030453F72137C31700623914 /* Resources */,
+				030453F02137AE2300623914 /* Info.plist */,
+				030453F12137AE2300623914 /* Invoice.entitlements */,
+			);
+			path = Invoice;
+			sourceTree = "<group>";
+		};
+		030453F72137C31700623914 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				030454052138C82300623914 /* CSV.framework */,
+				030454042138C82300623914 /* CSV.framework.dSYM */,
+				030453F82137C39F00623914 /* New-Invoice.jpg */,
+				0304540D213A4EA400623914 /* Sample.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		030453FE2138645400623914 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				030453FF2138648600623914 /* DatePickerViewController.swift */,
+				030453FA2137CDD200623914 /* SingleViewController.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		030454012138C5FC00623914 /* Batch */ = {
+			isa = PBXGroup;
+			children = (
+				030454022138C61500623914 /* BatchViewController.swift */,
+				034C642F213E0C3300CE34C1 /* BatchDetailViewController.swift */,
+				0304540B213A4B4B00623914 /* BatchHelpViewController.swift */,
+				034C642D213DE60C00CE34C1 /* Header.swift */,
+				034C642B213DE45300CE34C1 /* Invoice.swift */,
+				0393EEA0213F1B1000336150 /* BatchView.swift */,
+			);
+			path = Batch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		030453E32137AE2100623914 /* Invoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 030453F42137AE2300623914 /* Build configuration list for PBXNativeTarget "Invoice" */;
+			buildPhases = (
+				030453E02137AE2100623914 /* Sources */,
+				030453E12137AE2100623914 /* Frameworks */,
+				030453E22137AE2100623914 /* Resources */,
+				0304540A2138C83600623914 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Invoice;
+			productName = Invoice;
+			productReference = 030453E42137AE2100623914 /* Invoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		030453DC2137AE2100623914 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Zyltr;
+				TargetAttributes = {
+					030453E32137AE2100623914 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 030453DF2137AE2100623914 /* Build configuration list for PBXProject "Invoice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 030453DB2137AE2100623914;
+			productRefGroup = 030453E52137AE2100623914 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				030453E32137AE2100623914 /* Invoice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		030453E22137AE2100623914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030453EC2137AE2300623914 /* Assets.xcassets in Resources */,
+				030454062138C82300623914 /* CSV.framework.dSYM in Resources */,
+				030453F92137C39F00623914 /* New-Invoice.jpg in Resources */,
+				0304540E213A4EA400623914 /* Sample.csv in Resources */,
+				030453EF2137AE2300623914 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		030453E02137AE2100623914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034C642E213DE60C00CE34C1 /* Header.swift in Sources */,
+				030454032138C61500623914 /* BatchViewController.swift in Sources */,
+				030454002138648600623914 /* DatePickerViewController.swift in Sources */,
+				030453FB2137CDD200623914 /* SingleViewController.swift in Sources */,
+				034C642C213DE45300CE34C1 /* Invoice.swift in Sources */,
+				0393EEA1213F1B1000336150 /* BatchView.swift in Sources */,
+				030453EA2137AE2100623914 /* MainViewController.swift in Sources */,
+				034C6430213E0C3300CE34C1 /* BatchDetailViewController.swift in Sources */,
+				0304540C213A4B4C00623914 /* BatchHelpViewController.swift in Sources */,
+				030453E82137AE2100623914 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		030453ED2137AE2300623914 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030453EE2137AE2300623914 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		030453F22137AE2300623914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		030453F32137AE2300623914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		030453F52137AE2300623914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Invoice/Invoice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2YL6W4CSFY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Invoice/Resources",
+				);
+				INFOPLIST_FILE = Invoice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyltr.Invoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		030453F62137AE2300623914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Invoice/Invoice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2YL6W4CSFY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Invoice/Resources",
+				);
+				INFOPLIST_FILE = Invoice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyltr.Invoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		030453DF2137AE2100623914 /* Build configuration list for PBXProject "Invoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030453F22137AE2300623914 /* Debug */,
+				030453F32137AE2300623914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		030453F42137AE2300623914 /* Build configuration list for PBXNativeTarget "Invoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030453F52137AE2300623914 /* Debug */,
+				030453F62137AE2300623914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 030453DC2137AE2100623914 /* Project object */;
+}
