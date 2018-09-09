@@ -9,11 +9,17 @@
 import Cocoa
 import CSV
 
+protocol BatchToSingleTransfer {
+    func transferInvoice (_ invoice: Invoice)
+}
+
 class BatchViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, DatePickerViewControllerDelegate {
     
     private enum SegueIdentifier : String {
         case BatchDetailSegue
     }
+    
+    var delegate: BatchToSingleTransfer?
     
     private let openPanel = NSOpenPanel ()
     private let csvAlert = NSAlert ()
@@ -123,6 +129,14 @@ class BatchViewController: NSViewController, NSTableViewDataSource, NSTableViewD
                 }
             }
         })
+    }
+    
+    @IBAction private func tableViewDoubleAction (_ sender: Any) {
+        if self.contentTableView.clickedRow >= 0 {
+            if let delegate = self.delegate {
+                delegate.transferInvoice (self.content[self.contentTableView.clickedRow])
+            }
+        }
     }
     
     @IBAction private func detailButtonPushed (_ sender: Any) {

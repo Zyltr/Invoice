@@ -17,7 +17,7 @@ class BatchDetailViewController: NSViewController {
         
         // Do view setup here.
         let origin = self.view.frame.origin
-        self.view.frame  = NSMakeRect (origin.x, origin.y, 300.0, 160.0)
+        self.view.frame  = NSMakeRect (origin.x, origin.y, 300.0, 340.0)
     }
     
 }

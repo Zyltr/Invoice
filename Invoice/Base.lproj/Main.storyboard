@@ -769,7 +769,7 @@
                 </viewController>
                 <customObject id="KAU-jP-DDW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="1323"/>
+            <point key="canvasLocation" x="-333" y="1323"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="5wN-61-jso">
@@ -905,7 +905,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" mirrorLayoutDirectionWhenInternationalizing="never" translatesAutoresizingMaskIntoConstraints="NO" id="VdN-tA-Vvd" userLabel="Address">
-                                                    <rect key="frame" x="170" y="499" width="255" height="46"/>
+                                                    <rect key="frame" x="170" y="500" width="255" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" baseWritingDirection="leftToRight" placeholderString="- -" id="pDA-MT-Yij">
                                                         <font key="font" size="15" name="HelveticaNeue-Bold"/>
@@ -1239,7 +1239,7 @@
                 </viewController>
                 <customObject id="xN6-fv-BcO" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="2183"/>
+            <point key="canvasLocation" x="476" y="1384"/>
         </scene>
         <!--Batch View Controller-->
         <scene sceneID="u11-mZ-2w8">
@@ -1258,20 +1258,31 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-4J-1Pl" userLabel="CSV Recessed Button">
-                                <rect key="frame" x="20" y="526" width="380" height="19"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" mirrorLayoutDirectionWhenInternationalizing="never" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-Ov-4i6" userLabel="CSV Text Field">
+                                <rect key="frame" x="18" y="528" width="384" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="recessed" title="-" bezelStyle="recessed" alignment="left" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cez-VO-7j9">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" baseWritingDirection="leftToRight" alignment="left" placeholderString="-" usesSingleLineMode="YES" id="FUE-UV-AoK">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="HEn-RZ-dfx" name="value" keyPath="self.csvURL.path" id="ViM-Bf-rnr">
+                                        <dictionary key="options">
+                                            <string key="NSNullPlaceholder">-</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-4J-1Pl" userLabel="CSV Recessed Button">
+                                <rect key="frame" x="15" y="525" width="390" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="recessed" bezelStyle="recessed" alignment="left" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cez-VO-7j9">
                                     <behavior key="behavior" lightByContents="YES"/>
                                     <font key="font" metaFont="systemBold" size="12"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="csvButtonPushed:" target="HEn-RZ-dfx" id="C0Z-T4-af4"/>
-                                    <binding destination="HEn-RZ-dfx" name="title" keyPath="self.csvURL.path" id="U3e-pG-viA">
-                                        <dictionary key="options">
-                                            <string key="NSNullPlaceholder">-</string>
-                                        </dictionary>
-                                    </binding>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lnh-9h-n6v">
@@ -1283,12 +1294,36 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tO8-zB-yqt" userLabel="Date Label">
+                                <rect key="frame" x="20" y="463" width="382" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="-" id="3Of-3u-zFy">
+                                    <dateFormatter key="formatter" dateStyle="long" id="uwc-1I-hBc"/>
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="HEn-RZ-dfx" name="value" keyPath="self.date" id="6hN-ja-811"/>
+                                </connections>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xuJ-Cu-AG7">
+                                <rect key="frame" x="15" y="461" width="390" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="recessed" bezelStyle="recessed" alignment="left" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zCT-3z-MbM">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="systemBold" size="12"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="oJd-lR-gmL" kind="popover" identifier="BatchDatePickerSegue" popoverAnchorView="xuJ-Cu-AG7" popoverBehavior="t" preferredEdge="maxY" id="nrf-Ek-7Iu"/>
+                                </connections>
+                            </button>
                             <tabView fixedFrame="YES" initialItem="Lma-aZ-iMs" translatesAutoresizingMaskIntoConstraints="NO" id="a1D-SD-ycS">
                                 <rect key="frame" x="13" y="10" width="394" height="426"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <font key="font" metaFont="system"/>
                                 <tabViewItems>
-                                    <tabViewItem label="Content" identifier="" id="Lma-aZ-iMs">
+                                    <tabViewItem label="Printable" identifier="" id="Lma-aZ-iMs">
                                         <view key="view" ambiguous="YES" id="mTi-WV-Dxx">
                                             <rect key="frame" x="10" y="33" width="374" height="380"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1427,6 +1462,7 @@
                                                                     </tableColumn>
                                                                 </tableColumns>
                                                                 <connections>
+                                                                    <action trigger="doubleAction" selector="tableViewDoubleAction:" target="HEn-RZ-dfx" id="Q78-4L-gqB"/>
                                                                     <binding destination="R4d-ES-E3s" name="content" keyPath="arrangedObjects" id="Gjr-g9-oUN"/>
                                                                     <outlet property="dataSource" destination="HEn-RZ-dfx" id="ela-Mf-GgI"/>
                                                                     <outlet property="delegate" destination="HEn-RZ-dfx" id="Jns-4U-46A"/>
@@ -1436,7 +1472,7 @@
                                                         <nil key="backgroundColor"/>
                                                     </clipView>
                                                     <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="9iO-sR-enb">
-                                                        <rect key="frame" x="1" y="148" width="358" height="16"/>
+                                                        <rect key="frame" x="1" y="7" width="0.0" height="16"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </scroller>
                                                     <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="QWl-9z-215">
@@ -1461,7 +1497,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <clipView key="contentView" ambiguous="YES" id="sO4-by-htc">
                                                         <rect key="frame" x="1" y="0.0" width="358" height="359"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="40" headerView="pQW-yo-Zqj" viewBased="YES" id="Aus-pj-8PL">
                                                                 <rect key="frame" x="0.0" y="0.0" width="358" height="336"/>
@@ -1552,7 +1588,7 @@
                                                         </subviews>
                                                     </clipView>
                                                     <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="mn3-76-jW4">
-                                                        <rect key="frame" x="1" y="163" width="358" height="16"/>
+                                                        <rect key="frame" x="1" y="7" width="0.0" height="16"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </scroller>
                                                     <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cjb-qm-Wri">
@@ -1569,30 +1605,6 @@
                                     </tabViewItem>
                                 </tabViewItems>
                             </tabView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tO8-zB-yqt" userLabel="Date Label">
-                                <rect key="frame" x="20" y="463" width="382" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Date" id="3Of-3u-zFy">
-                                    <dateFormatter key="formatter" dateStyle="long" id="uwc-1I-hBc"/>
-                                    <font key="font" metaFont="systemBold"/>
-                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <binding destination="HEn-RZ-dfx" name="value" keyPath="self.date" id="6hN-ja-811"/>
-                                </connections>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xuJ-Cu-AG7">
-                                <rect key="frame" x="15" y="461" width="390" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="recessed" bezelStyle="recessed" alignment="left" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zCT-3z-MbM">
-                                    <behavior key="behavior" lightByContents="YES"/>
-                                    <font key="font" metaFont="systemBold" size="12"/>
-                                </buttonCell>
-                                <connections>
-                                    <segue destination="oJd-lR-gmL" kind="popover" identifier="BatchDatePickerSegue" popoverAnchorView="xuJ-Cu-AG7" popoverBehavior="t" preferredEdge="maxY" id="nrf-Ek-7Iu"/>
-                                </connections>
-                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -1617,7 +1629,7 @@
                     </connections>
                 </arrayController>
             </objects>
-            <point key="canvasLocation" x="699" y="658.5"/>
+            <point key="canvasLocation" x="699" y="684.5"/>
         </scene>
         <!--Batch Detail View Controller-->
         <scene sceneID="liG-Q6-mkb">
@@ -2105,18 +2117,18 @@
                 </viewController>
                 <customObject id="Zhh-ZM-TVs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245" y="658"/>
+            <point key="canvasLocation" x="1161" y="792"/>
         </scene>
         <!--Batch Help View Controller-->
         <scene sceneID="4bH-CU-jqS">
             <objects>
                 <viewController title="Batch Help View Controller" id="NN5-ls-BIc" customClass="BatchHelpViewController" customModule="Invoice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="kAp-55-qxX">
-                        <rect key="frame" x="0.0" y="0.0" width="359" height="311"/>
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="353"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iyw-og-zaF">
-                                <rect key="frame" x="18" y="274" width="32" height="17"/>
+                                <rect key="frame" x="18" y="316" width="32" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CSV" id="9Ij-9X-idv">
                                     <font key="font" metaFont="systemBold"/>
@@ -2125,7 +2137,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WxY-9F-g5k">
-                                <rect key="frame" x="54" y="274" width="287" height="17"/>
+                                <rect key="frame" x="54" y="316" width="287" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Must have the following required Headers." id="3dD-do-08H">
                                     <font key="font" metaFont="systemHeavy" size="13"/>
@@ -2134,7 +2146,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="loG-UD-8YB">
-                                <rect key="frame" x="54" y="215" width="67" height="51"/>
+                                <rect key="frame" x="54" y="257" width="67" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name Address Gardener" id="A59-v5-svb">
                                     <font key="font" metaFont="systemHeavy" size="13"/>
@@ -2143,7 +2155,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOG-iM-Yat">
-                                <rect key="frame" x="54" y="105" width="287" height="102"/>
+                                <rect key="frame" x="54" y="147" width="287" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="oQE-dP-BZS">
                                     <font key="font" metaFont="systemHeavy" size="13"/>
@@ -2153,7 +2165,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j94-7q-oEw">
-                                <rect key="frame" x="54" y="46" width="287" height="51"/>
+                                <rect key="frame" x="54" y="88" width="287" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Headers not matching the Invoice fields will be ignored. Please see the sample file for reference." id="NkB-az-GFI">
                                     <font key="font" metaFont="systemHeavy" size="13"/>
@@ -2162,7 +2174,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxd-pu-hg8">
-                                <rect key="frame" x="49" y="19" width="175" height="19"/>
+                                <rect key="frame" x="49" y="61" width="175" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="recessed" title="Sample CSV File Download" bezelStyle="recessed" alignment="left" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ctm-dl-dO9">
                                     <behavior key="behavior" lightByContents="YES"/>
@@ -2172,12 +2184,21 @@
                                     <action selector="sampleButtonPushed:" target="NN5-ls-BIc" id="9XA-Zd-IcC"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="in5-Db-cQf">
+                                <rect key="frame" x="54" y="20" width="256" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Double clicking any row will copy and transfer control to the &quot;Single&quot; tab." id="3wa-kA-K9x">
+                                    <font key="font" metaFont="systemHeavy" size="13"/>
+                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                 </viewController>
                 <customObject id="f5q-nC-ud1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="1531"/>
+            <point key="canvasLocation" x="669" y="120"/>
         </scene>
     </scenes>
     <resources>

@@ -8,18 +8,14 @@
 
 import Cocoa
 
-class BatchHelpViewController: NSViewController
-{
+class BatchHelpViewController: NSViewController {
 
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
-    @IBAction func sampleButtonPushed(_ sender: Any)
-    {
-        /*
+    @IBAction func sampleButtonPushed(_ sender: Any) {
         if let path = Bundle.main.path(forResource: "Sample", ofType: ".csv") {
             let savePanel = NSSavePanel()
             savePanel.nameFieldStringValue = "Sample.csv"
@@ -40,7 +36,6 @@ class BatchHelpViewController: NSViewController
                 }
             })
         }
-        */
     }
     
 }

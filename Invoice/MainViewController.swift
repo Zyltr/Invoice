@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainViewController: NSViewController {
+class MainViewController: NSViewController, BatchToSingleTransfer {
     
     @IBOutlet weak var tabView: NSTabView!
     
@@ -42,10 +42,18 @@ class MainViewController: NSViewController {
             switch type {
             case .BatchSegue:
                 self.batchViewController = segue.destinationController as! BatchViewController
+                self.batchViewController.delegate = self
             case .SingleSegue:
                 self.singleViewController = segue.destinationController as! SingleViewController
             }
         }
+    }
+    
+    func transferInvoice (_ invoice: Invoice) {
+        let index = self.tabView.indexOfTabViewItem (withIdentifier: "Single")
+        self.tabView.selectTabViewItem (at: index)
+        let date = self.batchViewController.invoiceDate()
+        self.singleViewController.fillUsingInvoice (invoice, date)
     }
     
     @IBAction private func printInvoice (_ sender: Any?) {
